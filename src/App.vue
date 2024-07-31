@@ -38,10 +38,15 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <CharacterList />
+
+    <AppHeader />
+  
+    <CharacterList />
+  
+  
 </template>
 
 <style lang="scss">
   @import './styles/general.scss'
+
 </style>

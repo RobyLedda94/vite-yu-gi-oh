@@ -1,16 +1,33 @@
 <script>
+// importo lo store
+
+import { store } from '../store.js'
+
 export default {
-    
+    data () {
+        return {
+            store
+        }
+    }
 }
 </script>
 
 
 <template>
-    <div>
-        <h1>prova</h1>
-    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4" v-for="character in store.charactersList" :key="character.id">
+                    {{ character.name }}
+                </div>
+            </div>
+        </div>
+    </main>
+
 </template>
 
-<style lang="">
-    
+<style lang="scss">
+    main{
+        padding: 20px 0px;
+    }
 </style>
