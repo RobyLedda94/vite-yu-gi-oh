@@ -5,12 +5,15 @@ import { store } from './store.js';
 import axios from 'axios';
 // importo componente appheader
 import AppHeader from './components/AppHeader.vue';
-
+// importo componente CharacterList
+import CharacterList from './components/CharacterList.vue';
 
 export default {
   components: {
     // utilizzo la componente appheader
-    AppHeader
+    AppHeader,
+    // utilizzo componente CharacterList
+    CharacterList
   },
 
   // devo popolare l'array vuoto
@@ -36,11 +39,7 @@ export default {
 
 <template>
   <AppHeader />
-  <div class='container'>
-      <div class='row'>
-
-      </div>
-  </div>
+  <CharacterList />
 </template>
 
 <style lang="scss">
