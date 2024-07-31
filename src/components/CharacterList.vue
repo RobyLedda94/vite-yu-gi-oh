@@ -17,8 +17,14 @@ export default {
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4" v-for="character in store.charactersList" :key="character.id">
-                    {{ character.name }}
+                <div class="col-12 col-md-3" v-for="character in store.charactersList" :key="character.id">
+                    <div class="card mt-1">
+                        <img :src="character.image_url" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">{{character.name}}</h5>
+                          <p class="card-text">{{ character.archetype}}</p>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
