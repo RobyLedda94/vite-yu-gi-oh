@@ -1,16 +1,14 @@
 <script>
 export default {
-  
+    
 }
 </script>
-
-
-vue <template lang="">
-  <div>
-    
-  </div>
+<template lang="">
+    <div>
+        
+    </div>
 </template>
 
 <style lang="">
-  
+    
 </style>
