@@ -7,13 +7,17 @@ import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
 // importo componente CharacterList
 import CharacterList from './components/CharacterList.vue';
+// importo la componenete CharacterCard
+import CharacterCard from './components/CharacterCard.vue';
 
 export default {
   components: {
     // utilizzo la componente appheader
     AppHeader,
     // utilizzo componente CharacterList
-    CharacterList
+    CharacterList,
+    // utilizzo la componenete CharacterCard
+    CharacterCard
   },
 
   // devo popolare l'array vuoto
@@ -42,6 +46,8 @@ export default {
     <AppHeader />
   
     <CharacterList />
+
+    <CharacterCard v-for="character in store.charactersList" :key="character.id" :card="character"/>
   
   
 </template>

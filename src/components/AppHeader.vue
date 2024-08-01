@@ -19,6 +19,10 @@ export default {
 </template>
 
 <style lang="scss" scoped >
+
+header{
+    background-color: white;
+}
 .content-header{
 
     h1{
