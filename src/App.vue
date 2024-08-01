@@ -47,12 +47,19 @@ export default {
   
     <CharacterList />
 
-    <CharacterCard v-for="character in store.charactersList" :key="character.id" :card="character"/>
+    <div class="container">
+      <div class="row">
+        <CharacterCard v-for="character in store.charactersList" :key="character.id" :character="character"/>
+      </div>
+    </div>
+   
   
   
 </template>
 
 <style lang="scss">
   @import './styles/general.scss'
+
+
 
 </style>

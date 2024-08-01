@@ -27,7 +27,6 @@ export default {
                 <div class="founded-cards py-4">
                     <h2>Fouded 20 cards</h2>
                 </div>
-
             </div>
         </div>
     </main>
@@ -35,5 +34,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.founded-cards{
+    background-color: black;
+    color:white
+}
 </style>

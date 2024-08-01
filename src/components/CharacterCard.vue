@@ -23,13 +23,6 @@ export default {
 <style lang="scss">
 main{
     padding: 20px 0px;
-    .container{
-        background-color: white;
-        
-        .founded-cards{
-            background-color: black;
-            color:white
-        }
-    }
+
 }
 </style>
