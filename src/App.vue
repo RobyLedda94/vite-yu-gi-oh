@@ -51,7 +51,14 @@ export default {
       <div class="container-fluid text-center py-4">
         <div class="row">
             <div class="col-12">
-                <div class="btn">prova</div>
+                <select class="select-control">
+                  <option>Seleziona archetipo</option>
+                  <option value="Alien">Alien</option>
+                  <option value="Infernoble Arms">Infernoble Arms</option>
+                  <option value="Noble Knight">Noble Knight</option>
+                  <option value="Melodious">Melodious</option>
+                  <option value="Archfiend">Archfiend</option>
+                </select>
             </div>
         </div>
     </div>
